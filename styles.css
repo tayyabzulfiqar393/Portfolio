@@ -46,6 +46,14 @@ nav ul li a {
     font-size: 24px;
 }
 
+.close-menu {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    font-size: 24px;
+    color: #4a90e2; 
+}
+
+
 #nav-links.open {
     display: block;
 }
