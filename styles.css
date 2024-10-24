@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 24px;
+}
+
+#nav-links.open {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul#nav-links.open {
+        display: flex;
+    }
+}
+
+/* Section Styles */
+.content-section {
+    padding: 100px 50px;
+    display: none; /* Hide all sections initially */
+}
+
+/* Portfolio Section Styles */
+#portfolio-section {
+    display: block; /* Show portfolio by default */
+    text-align: center;
+}
+
+#portfolio-section h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+#portfolio-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* About Section Styles */
+#about-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.about-left p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.about-left .resume-btn {
+    padding: 10px 20px;
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about-left .resume-btn:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.skills, .frameworks {
+    margin-bottom: 20px;
+}
+
+.skills h3, .frameworks h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-items {
+    display: flex;
+}
+
+.skill-item {
+    margin-right: 15px;
+    text-align: center;
+}
+
+.skill-item img {
+    width: 48px;
+    height: 48px;
+}
+
+.skill-item p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Contact Me Section Styles */
+.contact-container {
+    background-color: #4a90e2;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #f1f1f1;
+}
