@@ -19,14 +19,6 @@ header {
     color: #4a90e2;
 }
 
-.close-menu {
-    display: none; /* Initially hidden */
-    cursor: pointer;
-    font-size: 24px;
-    color: #4a90e2; 
-}
-
-
 /* Navigation Styles */
 nav ul {
     list-style: none;
@@ -53,6 +45,14 @@ nav ul li a {
 .hamburger i {
     font-size: 24px;
 }
+
+.close-menu {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    font-size: 24px;
+    color: #4a90e2; 
+}
+
 
 #nav-links.open {
     display: block;
