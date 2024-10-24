@@ -80,7 +80,7 @@ nav ul li a {
 /* Section Styles */
 .content-section {
     padding: 100px 50px;
-    display: none; /* Hide all sections initially */
+    display: block; /* Hide all sections initially */
 }
 
 /* Portfolio Section Styles */
@@ -88,6 +88,71 @@ nav ul li a {
     display: block; /* Show portfolio by default */
     text-align: center;
 }
+
+/*Project styles
+/* Portfolio Project Styles */
+.project {
+    display: flex;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #666;
+}
+
+.project-tech {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.project-tech li {
+    margin-right: 10px;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    background-color: #357ABD;
+}
+
 
 #portfolio-section h1 {
     font-size: 48px;
